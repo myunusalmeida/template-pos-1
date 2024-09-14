@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Halaman Depan</title>
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-soft-blue">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-fluid">
+            <a href="." class="navbar-brand logo">
+                <img src="assets/images/logo.png" alt=""> KasirOnlen
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav me-auto gap-2">
+                    <li class="nav-item">
+                        <a href="." class="nav-link px-4">Kasir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order-list.html" class="nav-link active px-4">Order List</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Muhammad Yunus Almeida
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-2">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid py-5 px-1 px-lg-5">
+        <div class="row g-4">
+            <h2 class="text-dark fw-bold mb-4">Order List</h2>
+            <div class="col-6 col-lg-3">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#changeStatus">
+                    <div class="card-body">
+                        <p class="mb-0 text-secondary text-end fs-7">#128312</p>
+                        <h5 class="text-dark mb-0">Muhammad Yunus</h5>
+                        <p class="mb-2 text-secondary fs-8">
+                            3 Items
+                        </p>
+                        <span class="badge bg-primary">Completed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#changeStatus">
+                    <div class="card-body">
+                        <p class="mb-0 text-secondary text-end fs-7">#128312</p>
+                        <h5 class="text-dark mb-0">Adela Fatma Sari</h5>
+                        <p class="mb-2 text-secondary fs-8">
+                            3 Items
+                        </p>
+                        <span class="badge bg-danger">Canceled</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card" type="button" data-bs-toggle="modal" data-bs-target="#changeStatus">
+                    <div class="card-body">
+                        <p class="mb-0 text-secondary text-end fs-7">#128312</p>
+                        <h5 class="text-dark mb-0">Hanan</h5>
+                        <p class="mb-2 text-secondary fs-8">
+                            3 Items
+                        </p>
+                        <span class="badge bg-warning">Waiting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="changeStatus">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">Pesanan #128312</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="status">Ubah Status</label>
+                            <select id="status" class="form-select">
+                                <option value="Waiting">Waiting</option>
+                                <option value="Ready to Serve">Ready to Serve</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Canceled">Canceled</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" type="button">Ubah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <p class="mb-0 text-center text-secondary fs-7">
+                Copyright &copy; PT Onlenkan Teknologi Indonesia 2024. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

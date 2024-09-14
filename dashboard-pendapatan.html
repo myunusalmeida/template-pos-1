@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>Dashboard Pendapatan</title>
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-soft-blue">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-fluid">
+            <a href="." class="navbar-brand logo">
+                <img src="assets/images/logo.png" alt=""> KasirOnlen
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mx-auto gap-2">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link px-4">
+                            <i class="bx bxs-dashboard"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dashboard-menu.html" class="nav-link px-4">
+                            <i class="bx bx-food-menu"></i> Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dashboard-pendapatan.html" class="nav-link px-4 active">
+                            <i class="bx bx-money"></i> Pendapatan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dashboard-kasir.html" class="nav-link px-4">
+                            <i class="bx bx-user-pin"></i> Kasir
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Muhammad Yunus Almeida
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-2">
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid py-5 px-0 px-lg-5">
+        <div class="flex-centerbetween mb-4">
+            <h2 class="text-dark fw-bold mb-0">Pendapatan</h2>
+        </div>
+        <div class="card border-0">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Kode Pesanan</th>
+                                <th>Nama Kasir</th>
+                                <th>Nama Pelanggan</th>
+                                <th>Item</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td>1</td>
+                                <td>#128312</td>
+                                <td>Gamma</td>
+                                <td>Muhammad Yunus</td>
+                                <td>2 Item</td>
+                                <td>Rp. 35,000</td>
+                                <td>
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <button type="button" class="btn btn-primary btn-sm py-1 px-3 rounded-1"
+                                            data-bs-toggle="modal" data-bs-target="#detail">
+                                            <i class="bx bx-info-circle"></i> Detail Pesanan
+                                        </button>
+                                        <a href="#" class="btn btn-success btn-sm py-1 px-3 rounded-1">
+                                            <i class="bx bx-printer"></i> Cetak
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td>2</td>
+                                <td>#128322</td>
+                                <td>Gamma</td>
+                                <td>Hanan</td>
+                                <td>4 Item</td>
+                                <td>Rp. 80,000</td>
+                                <td>
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <button type="button" class="btn btn-primary btn-sm py-1 px-3 rounded-1"
+                                            data-bs-toggle="modal" data-bs-target="#detail">
+                                            <i class="bx bx-info-circle"></i> Detail Pesanan
+                                        </button>
+                                        <a href="#" class="btn btn-success btn-sm py-1 px-3 rounded-1">
+                                            <i class="bx bx-printer"></i> Cetak
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td>3</td>
+                                <td>#128344</td>
+                                <td>Galih</td>
+                                <td>Adela Fatma</td>
+                                <td>2 Item</td>
+                                <td>Rp. 56,000</td>
+                                <td>
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <button type="button" class="btn btn-primary btn-sm py-1 px-3 rounded-1"
+                                            data-bs-toggle="modal" data-bs-target="#detail">
+                                            <i class="bx bx-info-circle"></i> Detail Pesanan
+                                        </button>
+                                        <a href="#" class="btn btn-success btn-sm py-1 px-3 rounded-1">
+                                            <i class="bx bx-printer"></i> Cetak
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="text-end">Total</td>
+                                <td class="fw-semibold">Rp. 171.000</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="detail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title">Detail Pesanan</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-1 text-secondary text-uppercase fw-medium fs-7">Detail Produk</p>
+                        <div class="row mt-2">
+                            <div class="col-7">
+                                <p class="mb-0 text-dark fw-semibold">Cheesey Chicken</p>
+                                <p class="mb-0 text-secondary fs-7">Rp. 35,000</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="mb-0 text-dark text-end fw-semibold">Rp. 35,000</p>
+                                <p class="mb-0 text-secondary text-end fs-7">1x</p>
+                            </div>
+                        </div>
+
+                        <!-- Start Cut -->
+                        <div class="row mt-2">
+                            <div class="col-7">
+                                <p class="mb-0 text-dark fw-semibold">Row Marbled Meat Steak</p>
+                                <p class="mb-0 text-secondary fs-7">Rp. 34,000</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="mb-0 text-dark text-end fw-semibold">Rp. 68,000</p>
+                                <p class="mb-0 text-secondary text-end fs-7">2x</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-7">
+                                <p class="mb-0 text-dark fw-semibold">Maxi Burger</p>
+                                <p class="mb-0 text-secondary fs-7">Rp. 42,000</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="mb-0 text-dark text-end fw-semibold">Rp. 126,000</p>
+                                <p class="mb-0 text-secondary text-end fs-7">3x</p>
+                            </div>
+                        </div>
+                        <!-- Batas Cut -->
+
+                        <hr class="my-4" style="border-style: dashed;">
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <p class="mb-0 text-secondary">Subtotal</p>
+                            <p class="mb-0 text-dark fw-semibold">Rp. 229,000</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <p class="mb-0 text-secondary">Pajak</p>
+                            <p class="mb-0 text-dark fw-semibold">Rp. 12,000</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <p class="mb-0 text-secondary">Total</p>
+                            <p class="mb-0 text-dark fw-semibold">Rp. 241,000</p>
+                        </div>
+                        <hr class="my-4" style="border-style: dashed;">
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <p class="mb-0 text-secondary">Cash</p>
+                            <p class="mb-0 text-dark fw-semibold">Rp. 250,000</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-2">
+                            <p class="mb-0 text-secondary">Kembali</p>
+                            <p class="mb-0 text-dark fw-semibold">Rp. 9,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <p class="mb-0 text-center text-secondary fs-7">
+                Copyright &copy; PT Onlenkan Teknologi Indonesia 2024. Seluruh hak cipta dilindungi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
